@@ -59,6 +59,8 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intentToMain = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intentToMain);
                             finish();
+
+
                         }else{
                             Toast.makeText(LoginActivity.this, "Ther is no account with thin email", Toast.LENGTH_LONG).show();
 

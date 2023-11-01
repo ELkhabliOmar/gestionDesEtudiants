@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -15,14 +17,15 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    com.google.android.material.button.MaterialButton button;
+    Button logout;
+
 
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
+        if(currentUser == null){
             Intent intent = new Intent(MainActivity.this,LoginActivity.class);
             startActivity(intent);
             finish();
@@ -34,19 +37,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button demarer=findViewById(R.id.demarer);
+        logout = findViewById(R.id.logout);
 
-        demarer.setOnClickListener(new View.OnClickListener() {
+
+
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                mAuth.signOut();
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
-            });
+        });
 
-        FirebaseAuth mAuth;
-// Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
+
 
     }
 
@@ -62,11 +67,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //    }
 //}
-//public void logout(View view){
-//    FirebaseAuth.getInstance().signOut();
-//    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-//    startActivity(intent);
-//    finish();}
+
 
 
 }
