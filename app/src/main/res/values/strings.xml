@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">gestionDesEtudiants</string>
+    <string name="espace_etudiant">Espace Etudiant</string>
 </resources>

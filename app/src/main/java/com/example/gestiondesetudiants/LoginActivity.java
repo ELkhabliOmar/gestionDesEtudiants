@@ -3,12 +3,14 @@ package com.example.gestiondesetudiants;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.MediaRouteButton;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-
+        ProgressBar progressBar =findViewById(R.id.progressBar);
         seconnecter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +44,11 @@ public class LoginActivity extends AppCompatActivity {
                 FirebaseAuth mAuth;
 // Initialize Firebase Auth
                 mAuth = FirebaseAuth.getInstance();
+                if (!email.isEmpty() && !password.isEmpty()){
+
+                    progressBar.setVisibility(View.VISIBLE);
+                    }
+
                 if ( email.isEmpty() || password.isEmpty()){
 
                     edt_emailLogin.setError("Please enter your Email");
@@ -56,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            progressBar.setVisibility(View.GONE);
                             Intent intentToMain = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intentToMain);
                             finish();
