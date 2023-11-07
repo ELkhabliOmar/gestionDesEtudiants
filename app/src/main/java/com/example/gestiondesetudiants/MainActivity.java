@@ -2,6 +2,8 @@ package com.example.gestiondesetudiants;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
 note.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+     // Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+        Intent intent = new Intent(MainActivity.this, TabNavigation.class);
         startActivity(intent);
     }
 });
@@ -53,10 +56,52 @@ note.setOnClickListener(new View.OnClickListener() {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mAuth.signOut();
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
+
+
+                // Créez la boîte de dialogue d'alerte
+                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
+
+                // Définissez le message de la boîte de dialogue d'alerte
+                dialogBuilder.setMessage("Do you want to close this application?")
+                        // Si la boîte de dialogue est non-annulable
+                        .setCancelable(false)
+                        // Texte et action du bouton positif
+                        .setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                mAuth.signOut();
+                                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                                startActivity(intent);
+
+                                finish();
+                            }
+                        })
+                        // Texte et action du bouton négatif
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+                // Créez la boîte de dialogue
+                AlertDialog alert = dialogBuilder.create();
+                // Définissez le titre de la boîte de dialogue d'alerte
+                alert.setTitle("Alert Logout");
+                // Affichez la boîte de dialogue d'alerte
+                alert.show();
+
+
+
+
+
+
+
+
+
+
+
+
             }
         });
 

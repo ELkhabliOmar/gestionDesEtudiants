@@ -29,9 +29,10 @@ public class NoteAdapter extends ArrayAdapter<Note> {
         TextView timeTextView=view.findViewById(R.id.timeTextView);
         //titileTextView.setText(note.title);
         titileTextView.setText(note.getTitle());
-       // timeTextView.setText(note.getTimestamp().toString());
+        timeTextView.setText(note.getTimestamp());
         return view;
     }
+
 
 
 }
