@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,8 +25,9 @@ public class SigneUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signe_up);
         Button inscrire =findViewById(R.id.inscrire);
         EditText edt_nom_user =findViewById(R.id.edt_nom_user);
-        EditText edt_email =findViewById(R.id.edt_email);
-        EditText edt_password =findViewById(R.id.edt_password);
+        EditText edt_email =findViewById(R.id.edt_emailLogin);
+        EditText edt_password =findViewById(R.id.edt_passwordLogin);
+        EditText edt_passwordconfirmation =findViewById(R.id.edt_passwordLoginconfirmation);
         // ...
         FirebaseAuth mAuth;
 // Initialize Firebase Auth
@@ -34,12 +36,40 @@ public class SigneUpActivity extends AppCompatActivity {
         inscrire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FirebaseAuth mAuth;
                 String email = edt_email.getText().toString();
                 String password = edt_password.getText().toString();
-                if (!email.isEmpty() && !password.isEmpty()){
+                String passwordconfirmation = edt_passwordconfirmation.getText().toString();
+                String name = edt_nom_user.getText().toString();
+                if (!email.isEmpty() || !password.isEmpty() || !name.isEmpty() || !passwordconfirmation.isEmpty()) {
                     progressBar.setVisibility(View.VISIBLE);
+                }
+
+//                String email, password,name;
+//                email = editTextEmail.getText().toString();
+//                password = editTextPassword.getText().toString();
+//                name = editTextFullname.getText().toString();
+//                number = editTextNumber.getText().toString();
+                if (name.isEmpty() || email.isEmpty() || password.isEmpty() || passwordconfirmation.isEmpty()) {
+                    edt_nom_user.setError("Please enter your Full Name");
+                    edt_email.setError("Please enter your Email");
+                    edt_password.setError("Please enter your Password");
+                    edt_passwordconfirmation.setError("Please verifier your Password");
+                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    edt_email.setError("Use email like L13*******@usms.ac.ma");
+                } else if (name.length() > 20) {
+                    edt_email.setError("Invalid Name");
+                } else if (password.length() < 4) {
+                    edt_password.setError("Invalid Password");
+//                } else if (password !=passwordconfirmation) {
+//                    edt_password.setError("vérifie Password");
+//                    edt_passwordconfirmation.setError("vérifie Password");
+
+            } else {
+                    mAuth = FirebaseAuth.getInstance();
+
                     mAuth.createUserWithEmailAndPassword(email, password)
-                            .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
@@ -49,21 +79,24 @@ public class SigneUpActivity extends AppCompatActivity {
 
                                         Intent intent = new Intent(SigneUpActivity.this, LoginActivity.class);
                                         startActivity(intent);
+                                        finish();
+
                                         //  Sign in success, update UI with the signed-in user's information
                                         //FirebaseUser user = mAuth.getCurrentUser();
                                     } else {
                                         // If sign in fails, display a message to the user.
-                                        Toast.makeText(SigneUpActivity.this,task.getException().toString(),
+                                        Toast.makeText(SigneUpActivity.this, task.getException().toString(),
                                                 Toast.LENGTH_LONG).show();
 
                                     }
                                 }
                             });
-                }else {
-                    Toast.makeText(SigneUpActivity.this,"SVP Entrer email et le mot de passe",
-                            Toast.LENGTH_LONG).show();
-
                 }
+//                else{
+//                    Toast.makeText(SigneUpActivity.this, "SVP Entrer email et le mot de passe",
+//                            Toast.LENGTH_LONG).show();
+//
+//                }
 
 
             }
