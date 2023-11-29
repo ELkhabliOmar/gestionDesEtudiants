@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -21,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    ImageView logout,note;
+    ImageView logout,note,absence;
 
 
     @Override
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         logout = findViewById(R.id.logout);
          note =findViewById(R.id.note);
+        absence=findViewById(R.id.absence);
 
 note.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -52,6 +54,15 @@ note.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
+
+        absence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+                Intent intent2 = new Intent(MainActivity.this, AbsenceActivity.class);
+                startActivity(intent2);
+            }
+        });
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

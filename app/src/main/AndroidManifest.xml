@@ -18,12 +18,12 @@
         <activity
             android:name=".TabNavigation"
             android:exported="false" />
-        <activity
-            android:name=".TabNavavigation"
-            android:exported="false" />
-        <activity
-            android:name=".NoteActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".TabNavavigation"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".NoteActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".SigneUpActivity"
             android:exported="false" />
@@ -40,6 +40,10 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+        <activity
+            android:name=".AbsenceActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

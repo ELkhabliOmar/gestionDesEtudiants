@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "105533332180",
-    "project_id": "etudiant-762b0",
-    "storage_bucket": "etudiant-762b0.appspot.com"
+    "project_number": "1022787417274",
+    "project_id": "gestion-des-etudaints2",
+    "storage_bucket": "gestion-des-etudaints2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:105533332180:android:29d95040a9cfacf60cb941",
+        "mobilesdk_app_id": "1:1022787417274:android:08412c2f4cb5bca3e7fe83",
         "android_client_info": {
           "package_name": "com.example.gestiondesetudiants"
         }
@@ -15,26 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyALrecbc-ZrN8m4SPUgh7fkcSooXWoqhLA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:105533332180:android:4740b3d9f1b300810cb941",
-        "android_client_info": {
-          "package_name": "com.example.login"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyALrecbc-ZrN8m4SPUgh7fkcSooXWoqhLA"
+          "current_key": "AIzaSyCBL-Wq9KwW3SMLio7DipRZgAMWupywaMM"
         }
       ],
       "services": {
