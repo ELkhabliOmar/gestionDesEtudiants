@@ -71,7 +71,7 @@ public class SigneUpActivity extends AppCompatActivity {
                     mAuth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                public void onComplete(Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         Toast.makeText(SigneUpActivity.this, "createUserWithEmail:success.",
                                                 Toast.LENGTH_LONG).show();
@@ -104,4 +104,36 @@ public class SigneUpActivity extends AppCompatActivity {
         });
     }
 
+    public static class PDFs {
+        String title, url, id;
+
+        public PDFs(String title, String url) {
+            this.title = title;
+            this.url = url;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+    }
 }

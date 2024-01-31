@@ -1,10 +1,10 @@
 package com.example.gestiondesetudiants;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -20,8 +20,8 @@ public class TabNavigation extends AppCompatActivity {
         viewPager=findViewById(R.id.viewpager);
         tabLayout.setupWithViewPager(viewPager);
     TabNavAdapter tabNavAdapter = new TabNavAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        tabNavAdapter.addFragment(new FragmentPresence(),"Présence");
-        tabNavAdapter.addFragment(new FragmentReclamation(),"Reclamation");
+        //tabNavAdapter.addFragment(new FragmentPresence(),"Présence");
+        //tabNavAdapter.addFragment(new FragmentReclamation(),"Reclamation");
         tabNavAdapter.addFragment(new FragmentListeEtudiant(),"Liste Etudiant");
         viewPager.setAdapter(tabNavAdapter);
     }

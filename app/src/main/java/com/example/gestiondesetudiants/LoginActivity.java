@@ -3,7 +3,6 @@ package com.example.gestiondesetudiants;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.MediaRouteButton;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -61,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
                 mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
+                    public void onComplete(Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             progressBar.setVisibility(View.GONE);
                             Intent intentToMain = new Intent(LoginActivity.this, MainActivity.class);

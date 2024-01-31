@@ -2,6 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+
+
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,17 +27,28 @@
         android:theme="@style/Theme.GestionDesEtudiants"
         tools:targetApi="31">
         <activity
+            android:name=".notifActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Notici"
+            android:exported="false" />
+        <activity
+            android:name=".coursActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Home_activity"
+            android:exported="false" />
+        <activity
             android:name=".pageNoteActivity"
             android:exported="false" />
         <activity
             android:name=".TabNavigation"
-            android:exported="false" />
-        <activity
-            android:name=".TabNavavigation"
-            android:exported="false" />
-        <activity
-            android:name=".NoteActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".TabNavavigation" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".NoteActivity" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".SigneUpActivity"
             android:exported="false" />
@@ -40,6 +65,15 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+        <activity
+            android:name=".AbsenceActivity"
+            android:exported="false" />
+        <service
+            android:name=".notifActivity2"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
+
+
 
 </manifest>

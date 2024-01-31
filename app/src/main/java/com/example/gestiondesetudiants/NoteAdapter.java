@@ -17,9 +17,8 @@ public class NoteAdapter extends ArrayAdapter<Note> {
         super(context,0,notelist);
 
     }
-    @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public View getView(int position, @Nullable View convertView, ViewGroup parent) {
         View view = convertView; // Reuse the convertView if available
         if (view == null) {
             view = LayoutInflater.from(getContext()).inflate(R.layout.note_layout, parent, false);
