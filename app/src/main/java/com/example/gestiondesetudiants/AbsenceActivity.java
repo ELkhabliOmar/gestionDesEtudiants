@@ -2,6 +2,7 @@ package com.example.gestiondesetudiants;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,6 +53,14 @@ public class AbsenceActivity extends AppCompatActivity {
         txt_date.setText(date);
         showData();
 
+        btn_view_listEtudiant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context,tableAbsActivity.class);
+                startActivity(intent);
+
+            }
+        });
 //        btn_view_listEtudiant.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
