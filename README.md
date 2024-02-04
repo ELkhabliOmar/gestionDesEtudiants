@@ -1,4 +1,4 @@
-Cette application permet de gérer les étudiants d'un établissement scolaire. Elle offre les fonctionnalités suivantes :
+##Cette application permet de gérer les étudiants d'un établissement scolaire. Elle offre les fonctionnalités suivantes :
 
 Gestion des étudiants
 
