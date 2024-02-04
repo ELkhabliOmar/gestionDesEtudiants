@@ -25,5 +25,6 @@ Consultation des absences des étudiants
 Envoi d'alertes aux étudiants en cas d'absences excessives
 
 ![3](https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/41586c18-4b8c-4c79-83cc-0b19b46d6695)
-[Youtube](https://www.youtube.com/watch?v=gABRP6nKi1U&t=3s) - learn program
+
+[Youtube](https://www.youtube.com/watch?v=gABRP6nKi1U&t=3s) - Vidéo explicative d'application
 
