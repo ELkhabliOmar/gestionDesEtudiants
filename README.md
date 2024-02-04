@@ -1,4 +1,4 @@
-# Cette application permet de gérer les étudiants d'un établissement scolaire. Elle offre les fonctionnalités suivantes :
+# Au cours de notre projet de développement d'une application mobile, nous avons conçu une application permettant de gérer les étudiants d'un établissement scolaire. Elle met à disposition les fonctionnalités suivantes  :
 
 ## - Gestion des étudiants
 
