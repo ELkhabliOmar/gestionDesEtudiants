@@ -27,4 +27,5 @@
 ![3](https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/41586c18-4b8c-4c79-83cc-0b19b46d6695)
 
 ## [Youtube](https://www.youtube.com/watch?v=gABRP6nKi1U&t=3s) - Vidéo explicative d'application
+[Rapport d'application_de la gestion_de_classe.pdf](https://github.com/ELkhabliOmar/gestionDesEtudiants/files/14157651/application_gestion_de_classe.pdf)
 
