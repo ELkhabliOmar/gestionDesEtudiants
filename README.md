@@ -47,10 +47,16 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
 
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="(https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/3c8cc306-e905-47dd-9d68-5167acc02e2d)" alt="Testimonial 2" width="200"/>
-  <img src="(https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/85b47ced-f134-492e-bd63-889b78e77d13)" alt="Testimonial 2" width="200"/>
-  <img src="(https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1d9e97f5-7d0e-418e-a1de-01a02e3c5e0c)" alt="Testimonial 3" width="200"/>
-  <img src="(https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1509122c-7584-4604-8a3e-6901eb744f7e)" alt="Testimonial 4" width="200"/>
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/3c8cc306-e905-47dd-9d68-5167acc02e2d" alt="Testimonial 2" width="200" height="415" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/85b47ced-f134-492e-bd63-889b78e77d13" alt="Testimonial 2" width="200" height="415" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1d9e97f5-7d0e-418e-a1de-01a02e3c5e0c" alt="Testimonial 3" width="200"height="415" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1509122c-7584-4604-8a3e-6901eb744f7e" alt="Testimonial 4" width="200" height="415" />
+</div>
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/633613b6-b0c0-480d-acdc-8678885d39a1" alt="Testimonial 4" width="200" height="415" />
+</div>
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/633613b6-b0c0-480d-acdc-8678885d39a1" alt="Testimonial 4" width="200" height="415" />
 </div>
 
 ## Getting Started
