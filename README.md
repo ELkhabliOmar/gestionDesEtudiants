@@ -47,16 +47,17 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
 
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/3c8cc306-e905-47dd-9d68-5167acc02e2d" alt="Testimonial 2" width="200" height="415" />
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/85b47ced-f134-492e-bd63-889b78e77d13" alt="Testimonial 2" width="200" height="415" />
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1d9e97f5-7d0e-418e-a1de-01a02e3c5e0c" alt="Testimonial 3" width="200"height="415" />
-  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1509122c-7584-4604-8a3e-6901eb744f7e" alt="Testimonial 4" width="200" height="415" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/3c8cc306-e905-47dd-9d68-5167acc02e2d" alt="Testimonial 2" width="200" height="415" />
+
+ 
 </div>
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/633613b6-b0c0-480d-acdc-8678885d39a1" alt="Testimonial 4" width="200" height="415" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/633613b6-b0c0-480d-acdc-8678885d39a1" alt="Testimonial 4" width="610" height="415" />
 </div>
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/633613b6-b0c0-480d-acdc-8678885d39a1" alt="Testimonial 4" width="200" height="415" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/d4015ec7-22e6-4ec0-bcad-f0581caf875b" alt="Testimonial 4" width="610" height="415" />
 </div>
 
 ## Getting Started
@@ -67,9 +68,17 @@ To run the  mobile application locally, follow these steps:
    ```bash
    git clone https://github.com/ELkhabliOmar/gestionDesEtudiants
 
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/41586c18-4b8c-4c79-83cc-0b19b46d6695" alt="Testimonial 4" width="200" height="415" />
+</div>
 
-![3](https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/41586c18-4b8c-4c79-83cc-0b19b46d6695)
 
-## [Youtube](https://www.youtube.com/watch?v=gABRP6nKi1U&t=3s) - Vidéo explicative d'application
-## [Rapport d'application_de la gestion_de_classe.pdf](https://github.com/ELkhabliOmar/gestionDesEtudiants/files/14157651/application_gestion_de_classe.pdf)
+### [Youtube](https://www.youtube.com/watch?v=gABRP6nKi1U&t=3s) - Vidéo explicative d'application
+### [Rapport d'application_de la gestion_de_classe.pdf](https://github.com/ELkhabliOmar/gestionDesEtudiants/files/14157651/application_gestion_de_classe.pdf)
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+
+<a href="https://www.linkedin.com/in/omar-el-khabli" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="fouad011" height="30" width="40" /></a>
+</p>
+
 
