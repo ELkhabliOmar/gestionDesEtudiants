@@ -1,4 +1,5 @@
-# Gestion des Classes Mobile Application
+# Conception et réalisation d’une application Mobile Android de Gestion des classes.
+
 
 ![logo1](https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/c88a35df-5f37-40e0-baa1-8a38268ba1a3)
 
@@ -7,7 +8,7 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
 
 ## fonctionnalités
 
-- **Pour le compte étudiant:**
+### **Pour le compte étudiant:**
  
  - Consultation des informations des étudiants (nom, prénom, adresse, etc.)
 
@@ -19,7 +20,7 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
 
  - Envoi d'alertes aux étudiants en cas d'absences excessives
 
-- **Pour le compte admin:**
+  ### **Pour le compte admin:**
   
  - Gestion des étudiants
 
@@ -32,8 +33,6 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
  - Les cours
 
  - Saisie des notes des étudiants
-
- - Calcul des moyennes
 
  - Consultation des notes des étudiants
 
