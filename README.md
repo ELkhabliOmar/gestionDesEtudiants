@@ -59,6 +59,12 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/d4015ec7-22e6-4ec0-bcad-f0581caf875b" alt="Testimonial 4" width="610" height="415" />
 </div>
 
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/5c5b1a9a-74a5-4631-9470-24ba27f40c7b" alt="Testimonial 4" width="800" height="500" />
+</div>
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/3e76f4e6-824f-42c3-9832-b6d4b8fee5f3" alt="Testimonial 4" width="1200" height="815" />
+</div>
 ## Getting Started
 
 To run the  mobile application locally, follow these steps:
