@@ -69,7 +69,7 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/5c5b1a9a-74a5-4631-9470-24ba27f40c7b" alt="Testimonial 4" width="800" height="500" />
 </div>
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/ec807809-0cae-4ec3-9be2-e44a9027d299" alt="Testimonial 4" width="1000" height="1300" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/ec807809-0cae-4ec3-9be2-e44a9027d299" alt="Testimonial 4" width="1000" height="1200" />
 </div>
 ## Getting Started
 
