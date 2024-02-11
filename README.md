@@ -42,9 +42,11 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
 
  - Consultation des absences des étudiants
 
+
  - Envoi d'alertes aux étudiants en cas d'absences excessives
 
 
+<!--
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/85b47ced-f134-492e-bd63-889b78e77d13" alt="Testimonial 2" width="200" height="415" />
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/1d9e97f5-7d0e-418e-a1de-01a02e3c5e0c" alt="Testimonial 3" width="200"height="415" />
@@ -59,11 +61,15 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/d4015ec7-22e6-4ec0-bcad-f0581caf875b" alt="Testimonial 4" width="610" height="415" />
 </div>
 
+
+-->
+
+
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/5c5b1a9a-74a5-4631-9470-24ba27f40c7b" alt="Testimonial 4" width="800" height="500" />
 </div>
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/3e76f4e6-824f-42c3-9832-b6d4b8fee5f3" alt="Testimonial 4" width="1200" height="815" />
+  <img src="https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/ec807809-0cae-4ec3-9be2-e44a9027d299" alt="Testimonial 4" width="1000" height="1300" />
 </div>
 ## Getting Started
 
