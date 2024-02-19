@@ -1,4 +1,4 @@
-# Conception et réalisation d’une application Mobile Android de Gestion des classes.
+# Conception et réalisation d’une application Mobile dédient à la  gestion des classes.
 
 
 ![logo1](https://github.com/ELkhabliOmar/gestionDesEtudiants/assets/143323403/c88a35df-5f37-40e0-baa1-8a38268ba1a3)
