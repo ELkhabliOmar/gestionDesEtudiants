@@ -73,8 +73,7 @@ Nous vous invitons à découvrir l'application mobile de gestion des classes, co
 </div>
 ## L'instalation :
 
-Pour exécuter l’application mobile localement, suivre l'étape suivant :
-
+Pour exécuter l’application mobile localement, suivre l'étape suivante :
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/ELkhabliOmar/gestionDesEtudiants
